@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project default="runjunit" name="Calculator Function">
+<project default="run" name="Calculator Function">
     
     <target name="run" depends="compile">
         <java classname="main.CalMain">
