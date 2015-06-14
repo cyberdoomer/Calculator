@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="runjunit" name="Calculator Function">
+    
+    <target name="run" depends="compile">
+        <java classname="main.CalMain">
+            <classpath path="log"/>
+        </java>
+    </target>
+    
+    <target name="compile">
+        <javac includeantruntime="false" srcdir="./src" destdir="log"/>
+        <classpath>
+            <pathelement location="junit.jar"/>
+            <pathelement/>
+        </classpath>
+    </target>
+    <target name="runjunit" depends="compile">
+        <junit>
+            <test name="test.CalculatorTest"/>
+        </junit>
+    </target>
+</project>
