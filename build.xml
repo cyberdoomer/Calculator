@@ -6,6 +6,7 @@
             <classpath path="log"/>
         </java>
     </target>
+
     <target name="compile">
         <javac includeantruntime="false" srcdir="./src" destdir="log"/>
     </target>
