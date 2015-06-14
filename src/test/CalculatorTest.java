@@ -18,6 +18,9 @@ public class CalculatorTest {
 		
 		int answer = BasicCalculator.add(a, b);
 		assertTrue(a +" + " +b + " = " +(a+b), answer == a+b);
+
+		int answer = BasicCalculator.add(b, a);
+		assertTrue(a +" + " +b + " = " +(a+b), answer == a+b);
 	}
 
 }
