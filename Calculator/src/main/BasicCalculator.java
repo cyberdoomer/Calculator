@@ -7,4 +7,7 @@ public class BasicCalculator {
 	public static int minus(int a, int b){
 		return b-a;
 	}
+	public static int devide(int a, int b){
+		return a/b;
+	}
 }
